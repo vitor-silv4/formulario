@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de funcionário</title>
+    <style>
+        .texto
+        {
+            width: 600px;
+            height: 200px;
+            background-color: aquamarine;
+            font-size: 18px;
+        }
+        .botoes
+        {
+            width: 100%;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .botao
+        {
+            margin-left: 20px;
+            background-color: blueviolet;
+        }
+        .botao:hover /* Passagem do mouse muda a cor*/
+        {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+            <legend> Dados pessoais </legend>
+            Nome: <inoute type="text" class="caixa_larga" id="nome"></inoute>
+            <br> <br>
+
+            Endereço: <inoute type="text" class="caixa_larga" id="endereco"></inoute>
+            <br> <br>
+
+            Cidade: <inoute type="text" class="caixa_larga" id="cidade"></inoute>
+            <br> <br>
+
+            Estado: <select class="estado" id="estado"> 
+                <option> São Paulo</option>
+                <option> Paraná</option>
+                <option> Santa Catarina</option>
+            </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend> Dados profissionais </legend>
+        Natureza do cargo:
+        <br> 
+        <input type="radio" class="cargo" id="gerencia" name="cargos"> Gerencia
+        <input type="radio" class="cargo" id="financeiro" name="cargos"> Financeiro
+        <input type="radio" class="cargo" id="recepcao" name="cargos"> Recepção
+        <input type="radio" class="cargo" id="administrativo" name="cargos"> Administrativo
+        <input type="radio" class="cargo" id="juridico" name="cargos"> Jurídico
+        <br> <br>
+
+        Ârea de interesse
+        <br>
+        <input type="checkbox" class="areas" id="computacao"> Computação
+        <input type="checkbox" class="biologia" id="computacao"> Biologia
+        <input type="checkbox" class="meio_ambiente" id="computacao"> Meio meio_ambiente
+        <input type="checkbox" class="engenharia" id="computacao"> Engenharia
+        <input type="checkbox" class="historia" id="computacao"> Historia
+        <br> <br>
+
+        Mini-Curriculo 
+        <br>
+        <textarea class="texto" id="curriculo"> </textarea>
+        <br> <br>
+
+        Data de envio: <input type="date" id="data">
+
+    </fieldset>
+    <br>
+    <div class="botoes"> 
+    <button class="botao"> ENVIAR </button>
+    <button class="botao"> LIMPAR </button>
+    <button class="botao"> VOLTAR </button>
+    </div>
+</body>
+</html>
